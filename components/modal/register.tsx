@@ -141,7 +141,7 @@ export function AuthRegistrationDialog({ children, hidden = false }: Props) {
                             name="confirmPassword"
                             render={({ field }) => (
                                 <FormItem>
-                                <FormLabel>Password</FormLabel>
+                                <FormLabel>Confirm Password</FormLabel>
                                 <FormControl>
                                     <Input placeholder="Please re-enter your password" {...field} type='password' />
                                 </FormControl>

@@ -129,7 +129,7 @@ function NavbarUser() {
 
     return (
         <div className="inline-flex items-center gap-2">
-            <Button variant="outline" size="sm" className={cn("rounded-full space-x-2 !px-6 py-5")} onClick={handleClick}>
+            <Button variant="outline" size="sm" className={cn("rounded-full space-x-2 !px-6 py-5", "hover:cursor-pointer")} onClick={handleClick}>
                 <LogInIcon className='text-neutral-400'/>
                 <span>Login</span>
             </Button>
