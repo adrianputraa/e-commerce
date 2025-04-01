@@ -42,7 +42,7 @@ function NavbarBrand() {
     return (
         <Link href='/' className="inline-flex gap-x-2" passHref>
             <ShoppingCart />
-            <span className="font-bold text-lg">Ecommerce</span>
+            <span className="font-bold text-lg">nexustoys</span>
         </Link>
     )
 }
