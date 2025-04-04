@@ -69,39 +69,39 @@ function NavbarMenu() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="w-full flex items-center gap-0">
-            <FormField
-                control={form.control}
-                name="query"
-                render={({ field }) => (
-                <FormItem className="w-full max-w-lg">
-                    <FormControl>
-                        <Input 
-                            {...field} 
-                            placeholder="Search item..." 
-                            className={cn(
-                                "!text-lg !py-5",
-                                "rounded-xl rounded-r-none border-r-0", 
-                                "dark:border-neutral-700 dark:bg-neutral-900", 
-                                "focus:!outline-none focus:!ring-0")
-                            }
+                <FormField
+                    control={form.control}
+                    name="query"
+                    render={({ field }) => (
+                    <FormItem className="w-full max-w-lg">
+                        <FormControl>
+                            <Input 
+                                {...field} 
+                                placeholder="Search item..." 
+                                className={cn(
+                                    "!text-lg !py-5",
+                                    "rounded-xl rounded-r-none border-r-0", 
+                                    "dark:border-neutral-700 dark:bg-neutral-900", 
+                                    "focus:!outline-none focus:!ring-0")
+                                }
 
-                        />
-                    </FormControl>
-                </FormItem>
-                )}
-            />
-            <Button 
-                type="submit" 
-                variant="ghost" 
-                className={cn(
-                    "py-5",
-                    "rounded-xl rounded-l-none border border-l-0", 
-                    "dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-700",
-                    "hover:cursor-pointer"
-                )}
-            >
-                <SearchIcon />
-            </Button>
+                            />
+                        </FormControl>
+                    </FormItem>
+                    )}
+                />
+                <Button 
+                    type="submit" 
+                    variant="ghost" 
+                    className={cn(
+                        "py-5",
+                        "rounded-xl rounded-l-none border border-l-0", 
+                        "dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-700",
+                        "hover:cursor-pointer"
+                    )}
+                >
+                    <SearchIcon />
+                </Button>
             </form>
         </Form>
     )
@@ -129,6 +129,11 @@ function NavbarUser() {
 
     return (
         <div className="inline-flex items-center gap-2">
+            <Button className={cn("rounded-full space-x-2 !px-6 py-5", "hover:cursor-pointer")}>
+                <Link href='/admin/dashboard'>
+                    Admin
+                </Link>
+            </Button>
             <Button variant="outline" size="sm" className={cn("rounded-full space-x-2 !px-6 py-5", "hover:cursor-pointer")} onClick={handleClick}>
                 <LogInIcon className='text-neutral-400'/>
                 <span>Login</span>
